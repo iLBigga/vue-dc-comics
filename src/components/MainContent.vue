@@ -14,7 +14,7 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 
     @import '../style/_variables.scss';
 
@@ -22,7 +22,7 @@ export default {
         display: flex;
         align-items: center;
         background-color: $main-bg;
-        height: 200px;
+        height: 250px;
     }
     
     span {

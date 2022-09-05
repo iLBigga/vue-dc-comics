@@ -26,22 +26,27 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 
     @import '../style/_variables.scss';
 
     nav{
         display: flex;
         justify-content: space-between;
-        padding: 2rem;
         font-weight: 500;
+
+        figure{
+            display: flex;
+            align-items: center;
+        }
     }
 
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
+        height: 150px;
 
         li{
             display: flex;
@@ -57,7 +62,7 @@ export default {
                 bottom: 0;
                 right: 0;
                 left: 0;
-                height: 3px;
+                height: 4px;
                 background-color: $dc-blue;    
             }
 
