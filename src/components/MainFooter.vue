@@ -12,6 +12,6 @@ export default {
 </script>
 
 
-<style lang="sass" scoped>
+<style lang="scss" scope>
     
 </style>
