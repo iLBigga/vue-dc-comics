@@ -95,8 +95,6 @@ export default {
     @import '../style/_variables.scss';
 
     footer{
-
-
         .footer-nav{
             background-color: $dc-blue;
 
@@ -194,8 +192,6 @@ export default {
                     text-transform: uppercase;
                 }
             }
-
-
         }
     }  
 </style>

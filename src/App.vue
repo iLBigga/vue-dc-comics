@@ -9,7 +9,7 @@
 <script>
   import MainHeader from './components/MainHeader.vue'
   import MainContent from './components/MainContent.vue';
-import MainFooter from './components/MainFooter.vue';
+  import MainFooter from './components/MainFooter.vue';
 
 export default {
   name: 'App',
@@ -17,7 +17,7 @@ export default {
     MainHeader,
     MainContent,
     MainFooter
-}
+  }
 }
 </script>
 
