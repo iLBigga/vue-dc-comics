@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="grid">
         <article class="card" v-for="(comic, i) in comics" :key="i">
             <img :src="comic.thumb" :alt="comic.series">
             <div>{{comic.series}}</div>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .container {
+    .grid{
         display: grid;
         padding: 4rem 0;
         grid-template-columns: repeat(6, 1fr);

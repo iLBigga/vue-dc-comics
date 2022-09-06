@@ -2,7 +2,9 @@
     <main class="main-bg">
         <div class="jumbotron"></div>
         <div class="container">
+            <div class="button between" href="#">current series</div>
             <ComicsCards :comics="comics" />
+            <a class="button" href="#">load more</a>
         </div>
     </main>
 </template>
@@ -106,14 +108,37 @@ export default {
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: $main-bg;
 
-    .jumbotron{
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    .jumbotron {
         height: 500px;
         width: 100%;
         background-image: url('../assets/jumbotron.jpg');
         background-size: cover;
+    }
+
+    .button {
+        padding: 0.6rem 4rem;
+        background-color: $dc-blue;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .between {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+        padding: 1rem 2rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -122,5 +147,4 @@ span {
     font-size: 2rem;
     margin-right: auto;
 }
-
 </style>
